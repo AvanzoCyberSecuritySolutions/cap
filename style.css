@@ -1,0 +1,94 @@
+.heading {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@keyframes spinOnce {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin-once {
+  animation: spinOnce 0.3s ease-in-out 1;
+}
+#socialToggle { position: relative; z-index: 2; }
+#socialMenu { z-index: 1; pointer-events: none; padding-bottom: 80px; }
+
+#socialMenu > a {
+  opacity: 0;
+  transform: translateY(8px) scale(0.95);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+#socialMenu.open { pointer-events: none; }
+
+#socialMenu > a { pointer-events: auto; }
+#socialMenu.open > a {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+#socialMenu > a:nth-child(1) { transition-delay: 240ms; }
+#socialMenu > a:nth-child(2) { transition-delay: 200ms; }
+#socialMenu > a:nth-child(3) { transition-delay: 160ms; }
+#socialMenu > a:nth-child(4) { transition-delay: 120ms; }
+#socialMenu > a:nth-child(5) { transition-delay: 80ms; }
+#socialMenu > a:nth-child(6) { transition-delay: 40ms; }
+
+
+.bg-chat-purple {
+  background-color: #9b59b6; 
+}
+
+.hover\:bg-chat-purple-hover:hover {
+  background-color: #8e44ad; 
+}
+
+
+#socialMenu > a { position: relative; }
+#socialMenu > a::before {
+  content: attr(aria-label);
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 12px);
+  transform: translateY(-50%) translateX(-6px) scale(0.98);
+  padding: 7px 12px;
+  background: rgba(17, 24, 39, 0.92); 
+  color: #ffffff;
+  border-radius: 9999px;
+  white-space: nowrap;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 180ms cubic-bezier(0.22,1,0.36,1);
+}
+#socialMenu > a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 4px);
+  width: 10px;
+  height: 10px;
+  background: rgba(17, 24, 39, 0.92);
+  transform: translateY(-50%) rotate(45deg) translateX(-6px) scale(0.98);
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 180ms cubic-bezier(0.22,1,0.36,1);
+}
+#socialMenu > a:hover::before,
+#socialMenu > a:focus-visible::before {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0) scale(1);
+}
+#socialMenu > a:hover::after,
+#socialMenu > a:focus-visible::after {
+  opacity: 1;
+  transform: translateY(-50%) rotate(45deg) translateX(0) scale(1);
+}
+
