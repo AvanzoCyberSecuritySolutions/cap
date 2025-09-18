@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    
+    <header class="bg-white py-5 relative">
+      <div class="max-w-6xl mx-auto flex justify-between items-center px-5">
+        <div class="flex items-center gap-2.5">
+          <a href="./index.html">
+            <img src="images/cap_logo.png" alt="CAP Logo" class="h-20 w-auto" />
+          </a>
+        </div>
+        <div class="text-right">
+          <a href="https://avanzotrust.in/">
+            <img
+              src="images/avanzo_trust_logo.png"
+              alt="Avanzo Charitable Trust"
+              class="h-16 w-auto"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="flex flex-col gap-20">
+      <div
+        class="flex relative items-center justify-center bg-cover bg-center min-h-[280px] md:h-[400px] w-full px-6"
+        style="background-image: url('./images/audians.jpg')"
+      >
+        <h1 class="heading text-4xl sm:text-5xl md:text-7xl leading-tight break-words z-10 text-white text-center">
+          CYBER AWARENESS <br />
+          PROGRAMME
+        </h1>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-transparent via-black/50 to-black/90"
+        ></div>
+      </div>
+      <div class="px-6 md:px-12 lg:px-24">
+        <div class="mx-8">
+          <h3 class="font-extrabold text-gray-800 relative text-[15px] mb-5">
+            PUBLIC EVENTS
+            <span
+              class="w-8 h-8 border-[11px] border-gray-100 absolute -top-7 -left-7 -z-10 inline-block p-5"
+            ></span>
+          </h3>
+        </div>
+
+        <div class="flex flex-col">
+          <p class="text-[17px] text-gray-500 mb-3">
+            Avanzo Charitable Trust, a dynamic organization committed to
+            advancing cybersecurity and digital safety awareness, stands as a
+            beacon in orchestrating impactful public events that bring together
+            public figures from diverse fields to address and enlighten a
+            general audience on the critical importance of cyber and digital
+            safety. These events serve as powerful platforms for fostering
+            social awareness and inspiring individuals to become proactive
+            social volunteers in the realm of cybersecurity
+          </p>
+          <p class="text-[17px] text-gray-500 mb-3">
+            The public events organized by Avanzo Charitable Trust are
+            meticulously curated affairs designed to resonate with a broad
+            audience. By inviting public figures from various walks of life,
+            including technology experts, government officials, industry
+            leaders, and renowned academics, Avanzo Charitable Trust ensures a
+            comprehensive and engaging discourse on cyber and digital safety.
+            The eclectic mix of speakers brings diverse perspectives, enriching
+            the discussions and making the events relevant to a wide spectrum of
+            attendees. The primary objective of these events is to create social
+            awareness regarding the escalating threats in the digital landscape.
+            Avanzo Charitable Trust recognizes that a well-informed public is
+            pivotal in mitigating cyber risks, and these gatherings serve as
+            platforms to disseminate crucial information. Speakers delve into
+            topics such as the latest cybersecurity threats, data privacy
+            concerns, and emerging technologies that impact digital safety.
+            Their insights not only educate the audience but also empower them
+            to make informed decisions in an increasingly interconnected world.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <div class="fixed right-12 bottom-10 z-50">
+      <div
+        id="socialToggle"
+        class="w-12 p-8 h-12 bg-chat-purple rounded-full flex items-center justify-center text-white text-2xl cursor-pointer transition-all duration-300 hover:bg-chat-purple-hover shadow-lg"
+      >
+        <span id="toggleIcon">
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.177 17.75H14.5C16.8306 17.75 17.996 17.75 18.9081 17.3499C19.9995 16.8712 20.8712 15.9995 21.3499 14.9081C21.75 13.996 21.75 12.8306 21.75 10.5C21.75 8.16935 21.75 7.00403 21.3499 6.09195C20.8712 5.00046 19.9995 4.12885 18.9081 3.65008C17.996 3.25 16.8306 3.25 14.5 3.25H9.5C7.16935 3.25 6.00403 3.25 5.09195 3.65008C4.00046 4.12885 3.12885 5.00046 2.65008 6.09195C2.25 7.00403 2.25 8.16935 2.25 10.5C2.25 12.8306 2.25 13.996 2.65008 14.9081C3.12885 15.9995 4.00046 16.8712 5.09195 17.3499C5.36539 17.4699 5.66159 17.5538 6.00513 17.6127L5.74647 18.3886C5.36053 19.5465 5.16756 20.1254 5.38982 20.4362C5.45866 20.5325 5.54931 20.6111 5.65436 20.6657C5.99352 20.8417 6.53933 20.5688 7.63093 20.023L12.177 17.75Z"
+              fill="#ffffff"
+            ></path>
+          </svg>
+        </span>
+      </div>
+
+      <div
+        id="socialMenu"
+        class="absolute right-0 bottom-0 flex flex-col items-end space-y-3"
+      >
+        <a href="tel:+0000000000" aria-label="Call" class="w-16 h-16 flex items-center justify-center bg-gray-500 hover:bg-header-darker text-white rounded-full shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=918129771111&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-16 h-16 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white rounded-full shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 0 0 12.06 0C5.45.03.1 5.38.1 12a11.86 11.86 0 0 0 1.62 6l-1.07 3.91 4-.99A11.92 11.92 0 0 0 12.06 24c6.62 0 12-5.38 12-12 0-3.2-1.26-6.21-3.54-8.52ZM12.06 22a9.9 9.9 0 0 1-5.04-1.4l-.36-.21-2.37.59.63-2.29-.24-.37A10 10 0 1 1 22.06 12c0 5.52-4.48 10-10 10Zm5.52-7.41c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.28-.47-2.44-1.5-.9-.8-1.5-1.8-1.68-2.1-.18-.3-.02-.46.13-.61.14-.14.3-.37.45-.55.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.5-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.52s1.07 2.92 1.22 3.13c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.69.63.71.23 1.36.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-16 h-16 flex items-center justify-center bg-pink-600 hover:bg-pink-700 text-white rounded-full shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="w-16 h-16 flex items-center justify-center bg-black hover:bg-gray-800 text-white rounded-full shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://m.me/" target="_blank" rel="noopener noreferrer" aria-label="Messenger" class="w-16 h-16 flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.02 2 10.98c0 2.78 1.42 5.26 3.64 6.86V22l3.33-1.82c.97.27 1.99.42 3.03.42 5.52 0 10-4.02 10-8.98C22 6.02 17.52 2 12 2Zm5.08 8.64-2.7 2.86a1.2 1.2 0 0 1-1.65.1l-1.87-1.55-2.92 2.6c-.35.32-.9-.18-.6-.57l2.7-3.5a1.2 1.2 0 0 1 1.67-.24l1.86 1.48 2.96-2.27c.4-.3.92.2.55.69Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-16 h-16 flex items-center justify-center bg-sky-700 hover:bg-sky-800 text-white rounded-full shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.4v1.56h.05c.47-.88 1.62-1.8 3.33-1.8 3.56 0 4.21 2.34 4.21 5.39v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.02H3.54V9h3.58v11.45Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <script>
+      const socialToggle = document.getElementById("socialToggle");
+      const socialMenu = document.getElementById("socialMenu");
+      const toggleIcon = document.getElementById("toggleIcon");
+      if (socialToggle && socialMenu && toggleIcon) {
+        const defaultIconMarkup = toggleIcon.innerHTML;
+        const closeIconMarkup = `
+        <svg width=\"36\" height=\"36\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> 
+          <path d=\"M6 6l12 12M18 6l-12 12\" stroke=\"#ffffff\" stroke-width=\"2\" stroke-linecap=\"round\"/>
+        </svg>
+      `;
+        socialToggle.setAttribute("aria-label", "Toggle contact options");
+        socialToggle.setAttribute("aria-controls", "socialMenu");
+        socialToggle.setAttribute("aria-expanded", "false");
+        socialToggle.addEventListener("click", (event) => {
+          event.stopPropagation();
+          const isNowOpen = socialMenu.classList.toggle("open");
+          const iconEl = toggleIcon;
+          if (isNowOpen) {
+            iconEl.classList.add("spin-once");
+            setTimeout(() => { toggleIcon.innerHTML = closeIconMarkup; }, 150);
+            setTimeout(() => iconEl.classList.remove("spin-once"), 300);
+          } else {
+            toggleIcon.innerHTML = defaultIconMarkup;
+            iconEl.classList.add("spin-once");
+            setTimeout(() => iconEl.classList.remove("spin-once"), 300);
+          }
+          socialToggle.setAttribute("aria-expanded", String(isNowOpen));
+        });
+        document.addEventListener("click", (event) => {
+          if (socialMenu.classList.contains("open") && !socialToggle.contains(event.target) && !socialMenu.contains(event.target)) {
+            socialMenu.classList.remove("open");
+            toggleIcon.innerHTML = defaultIconMarkup;
+            toggleIcon.classList.add("spin-once");
+            setTimeout(() => toggleIcon.classList.remove("spin-once"), 300);
+            socialToggle.setAttribute("aria-expanded", "false");
+          }
+        });
+      }
+    </script>
+    <footer class="bg-[#111827] text-gray-300">
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between text-sm gap-4"
+      >
+        <p>A unit of Avanzo Charitable Trust | Designed by avanzodesign.in</p>
+        <div class="flex items-center gap-5">
+          
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="text-gray-400 hover:text-blue-500 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="h-6 w-6 md:h-7 md:w-7"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5A3.5 3.5 0 0 1 14 6h2v3h-2a1 1 0 0 0-1 1V12h3l-.5 3h-2.5v7A10 10 0 0 0 22 12z"
+              />
+            </svg>
+          </a>
+
+          
+          <a
+            href="#"
+            aria-label="Twitter"
+            class="text-gray-400 hover:text-blue-500 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="h-6 w-6 md:h-7 md:w-7"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 5.8c-.7.3-1.5.6-2.3.6a3.8 3.8 0 0 0 1.6-2.1c-.8.5-1.7.9-2.6 1.1A3.7 3.7 0 0 0 12 8.7a10.5 10.5 0 0 1-7.6-3.9 3.7 3.7 0 0 0 1.1 4.9c-.6 0-1.2-.2-1.7-.5v.1c0 1.8 1.3 3.4 3.1 3.7-.3.1-.7.1-1 .1-.2 0-.5 0-.7-.1.5 1.5 1.9 2.6 3.6 2.7A7.5 7.5 0 0 1 2 18.4a10.6 10.6 0 0 0 5.7 1.7c6.8 0 10.6-5.7 10.6-10.7v-.5c.7-.5 1.4-1.2 1.9-2z"
+              />
+            </svg>
+          </a>
+
+          
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="text-gray-400 hover:text-blue-500 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="h-6 w-6 md:h-7 md:w-7"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm6-1.3a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+          </a>
+
+          
+          <a
+            href="#"
+            aria-label="RSS"
+            class="text-gray-400 hover:text-blue-500 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="h-6 w-6 md:h-7 md:w-7"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M119.1 384c0 26.5-21.5 48-48 48s-48-21.5-48-48 21.5-48 48-48 48 21.5 48 48zm142.9 47.9c0-118.6-96.4-215-215-215-8.8 0-16 7.2-16 16v31.9c0 8.8 7.2 16 16 16 82.8 0 151 68.2 151 151 0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16zm128 0c0-194.3-157.7-352-352-352-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16 150 0 272 122 272 272 0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
